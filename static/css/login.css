@@ -1,0 +1,88 @@
+/* General styles for the login page */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* .container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+} */
+
+/* Login form styles */
+#login-form {
+    padding: 50px 0;
+}
+
+#login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#login-form form {
+    max-width: 100%;
+    width: 400px;
+    margin: auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#login-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#login-form input[type="email"],
+#login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#login-form button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#login-form button[type="submit"]:hover {
+    background-color: #555;
+}
+
+#login-form p {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+#login-form a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#login-form a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    #login-form form {
+        width: 100%;
+    }
+}

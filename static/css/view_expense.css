@@ -1,0 +1,93 @@
+/* General styles for the view expenses page */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+/* View expenses table styles */
+#view-expenses {
+    padding: 50px 0;
+}
+
+#view-expenses h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#view-expenses table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#view-expenses table thead th {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+}
+
+#view-expenses table tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#view-expenses table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#view-expenses table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+#view-expenses table tbody td a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+#view-expenses table tbody td a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    #view-expenses table,
+    #view-expenses table thead,
+    #view-expenses table tbody,
+    #view-expenses table th,
+    #view-expenses table td,
+    #view-expenses table tr {
+        display: block;
+    }
+
+    #view-expenses table thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    #view-expenses table tr {
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+    }
+
+    #view-expenses table td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+        text-align: left;
+    }
+
+    #view-expenses table td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+        color: #333;
+    }
+}
